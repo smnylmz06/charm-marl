@@ -175,6 +175,25 @@ source for every number in the paper.
 
 ---
 
+## Saved runs and data
+
+`results_all.json` is in the repository root, so every number in the paper can
+be checked without running anything.
+
+The raw runs under `experiments/` are too large for GitHub, so they are on
+Google Drive:
+
+https://drive.google.com/drive/folders/128YjR5NAcbrr1-DGd6i9YLaEF82u3N-h?usp=drive_link
+
+The folder holds one directory per seed (`seed_0`, `seed_1`, `seed_7`,
+`seed_42`, `seed_123`), each with the 17 configurations of the study. The
+`seed_42` folder also contains `A6_dqn_hybrid`, the three-tier hybrid run used
+for the hybrid-memory result (Table 18).
+
+To use it, download `experiments.zip` from Google Drive and unzip it in
+the repository root. This creates the `experiments/` folder. Then
+`python3 analyze_all.py` rebuilds `results_all.json` and the paper tables.
+
 ## Experiment names
 
 Names follow a simple pattern:
